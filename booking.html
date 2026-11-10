@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Advising Center</h1>
+    <nav>
+      <a href="index.html">Find Adviser</a> |
+      <a href="booking.html">Request Appointment</a> |
+      <a href="appointments.html">My Appointments</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Request Appointment</h2>
+    <form action="save.php" method="POST">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option>Academic</option>
+        <option>Career</option>
+        <option>Personal</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="appointment_date" required>
+
+      <button type="submit">Request Appointment</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026</p>
+  </footer>
+</body>
+</html>

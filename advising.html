@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Appointment</title>
+  <link rel="stylesheet" href="advising.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Request Appointment</h1>
+    <form action="save.php" method="POST">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic" required>
+        <option value="">-- Select Topic --</option>
+        <option value="academic">Academic</option>
+        <option value="career">Career</option>
+        <option value="personal">Personal</option>
+      </select>
+
+      <label for="pref_date">Preferred Date:</label>
+      <input type="date" id="pref_date" name="pref_date" required>
+
+      <button type="submit">Request Appointment</button>
+    </form>
+    <p><a href="list.php">View My Appointments</a></p>
+  </div>
+</body>
+</html>
